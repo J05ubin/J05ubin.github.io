@@ -53,7 +53,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .hero-left{flex:1;min-width:0}
 .hero-photo-wrap{
   position: absolute;
-  right: 10%;
+  right: 15%;
   top: 120px;
   }
 .hero-photo{width:270px;height:270px;border-radius:50%;border:3px solid rgba(124,111,247,0.45);overflow:hidden;box-shadow:0 0 50px rgba(124,111,247,0.2),0 0 100px rgba(124,111,247,0.08)}
@@ -168,6 +168,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;align-items:ce
 .proj-tags{display:flex;flex-wrap:wrap;gap:6px}
 .ptag{font-family:var(--font-mono);font-size:10px;padding:3px 9px;background:rgba(34,211,238,0.06);border:1px solid rgba(34,211,238,0.15);border-radius:3px;color:var(--cyan)}
 
+/* TRAININGS */
+#trainings{background:var(--bg)}
+
 /* CERTIFICATIONS */
 #certifications{background:var(--bg)}
 .cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.8rem}
@@ -253,10 +256,9 @@ footer span{color:var(--accent2)}
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Trainings</a></li>
-    <li><a href="#education">Education</a></li>
+    <li><a href="#trainings">Training</a></li>
     <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#resume">Resume</a></li>
+    <li><a href="#education">Education</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -268,7 +270,7 @@ footer span{color:var(--accent2)}
   <div class="hero-inner">
     <div class="hero-left">
       <div class="status-badge"><span class="pulse"></span> Available for Internships &amp; Projects</div>
-      <div class="hero-line">// Hello, World! I'm —</div>
+      <div class="hero-line">// Hello, I'm —</div>
       <h1 class="hero-name">
         <span class="first">Jubin</span>
         <span class="last">Mazumdar</span>
@@ -296,9 +298,9 @@ footer span{color:var(--accent2)}
         <a href="mailto:jubin05mazumdar@email.com" class="social-icon" title="Email">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
         </a>
-        <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon" title="Twitter / X">
+        <!-- <a href="https://twitter.com/yourhandle" target="_blank" class="social-icon" title="Twitter / X">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </a>
+        </a> -->
       </div>
             
       <!-- Buttons -->
@@ -497,15 +499,25 @@ footer span{color:var(--accent2)}
     </div>
     <div class="proj-grid reveal">
       <div class="proj-card">
+        <div class="cert-img-wrap">
+          <img src="ui/car valuation tool ui.png" alt="Car Valuation UI"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        </div>
         <div class="proj-head">
           <div class="proj-ico">🚗</div>
           <div class="proj-actions">
-            <a href="https://github.com/J05ubin/Car-Valuation-Tool" class="proj-btn" title="GitHub">GH</a>
-            <a href="https://car-valuation-tool-jm.streamlit.app" class="proj-btn" title="Live Demo">↗</a>
+            <a href="https://github.com/J05ubin/Car-Valuation-Tool" target="_blank" class="proj-btn" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+            <a href="https://car-valuation-tool-jm.streamlit.app" target="_blank" class="proj-btn" style="width:auto;padding:0 10px;font-size:11px;letter-spacing:0.5px">Live App</a>
           </div>
         </div>
         <div class="proj-title">Car Valuation Tool</div>
-        <div class="proj-desc">Built a complete machine learning pipeline for used car price prediction including data preprocessing, feature engineering, model training, and web deployment using Streamlit..</div>
+        <!-- <div class="proj-desc">🔴 <strong style="color:var(--accent3)">Problem:</strong> Used car buyers struggle to determine fair market prices, leading to overpaying or fraud.<br><br>✅ <strong style="color:var(--cyan)">Impact:</strong> ML-powered web app that predicts used car prices instantly — helping buyers make informed decisions with confidence.</div>
+        <br><strong style="color:var(--accent3)">🛠️ Tech Used: </strong> -->
+        <div class="proj-desc">Used car buyers struggle to know fair market prices, leading to overpaying or fraud. Built an ML-powered web app that predicts used car prices instantly — helping buyers make informed decisions with confidence.</div>
         <div class="proj-tags">
           <span class="ptag">Python</span>
           <span class="ptag">Pandas & NumPy</span>
@@ -515,15 +527,52 @@ footer span{color:var(--accent2)}
         </div>
       </div>
       <div class="proj-card">
+        <div class="cert-img-wrap">
+          <img src="nptel-cert.jpg" alt="air quality analysis dashboard"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        </div>
+        <div class="proj-head">
+        <div class="proj-ico">🌫️</div>
+          <div class="proj-actions">
+            <a href="https://github.com/J05ubin/Air-Quality-Analysis-Dashboard" target="_blank" class="proj-btn" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+            <!-- <a href="#" target="_blank" class="proj-btn" style="width:auto;padding:0 10px;font-size:11px;letter-spacing:0.5px">Live</a> -->
+          </div>
+        </div>
+        <div class="proj-title">Air Quality Analysis Dashboard</div>
+        <!-- <div class="proj-desc">🔴 <strong style="color:var(--accent3)">Problem:</strong> Rising air pollution in India lacks clear visual insights for policymakers and researchers.<br><br>✅ <strong style="color:var(--cyan)">Impact:</strong> Interactive Power BI dashboard identifying pollution hotspots across states — enabling targeted mitigation strategies.</div>
+        <br><strong style="color:var(--accent3)">🛠️ Tech Used: </strong> -->
+        <div class="proj-desc">Rising air pollution in India lacks clear visual insights for decision-makers. Built an interactive Power BI dashboard that identifies pollution hotspots across states — enabling policymakers and researchers to plan targeted mitigation strategies.</div>
+        <div class="proj-tags">
+          <span class="ptag">Power BI</span>
+          <span class="ptag">DAX</span>
+          <span class="ptag">Data Modeling</span>
+          <span class="ptag">Data Analytics</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <div class="cert-img-wrap">
+          <img src="nptel-cert.jpg" alt="movie recommendation system"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        </div>
         <div class="proj-head">
           <div class="proj-ico">🎞️</div>
           <div class="proj-actions">
-            <a href="https://github.com/J05ubin/movie-recommendation-system" class="proj-btn" title="GitHub">GH</a>
-            <a href="#" class="proj-btn" title="Live Demo">↗</a>
+            <a href="https://github.com/J05ubin/movie-recommendation-system" target="_blank" class="proj-btn" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+              </svg>
+            </a>
+            <!-- <a href="#" target="_blank" class="proj-btn" style="width:auto;padding:0 10px;font-size:11px;letter-spacing:0.5px">Live</a> -->
           </div>
         </div>
         <div class="proj-title">Movie Recommendationn System</div>
-        <div class="proj-desc">A movie recommendation platform that suggests similar movies based on user preferences.</div>
+        <!-- <div class="proj-desc">🔴 <strong style="color:var(--accent3)">Problem:</strong> Users waste time searching for movies they'll actually enjoy with no personalized suggestions.<br><br>✅ <strong style="color:var(--cyan)">Impact:</strong> Content-based recommendation engine that suggests similar movies instantly — improving the viewing experience.</div>
+        <br><strong style="color:var(--accent3)">🛠️ Tech Used: </strong> -->
+        <div class="proj-desc">Users waste time searching for movies they'll actually enjoy. Built a content-based recommendation engine that suggests similar movies instantly — saving time and improving the viewing experience.</div>
         <div class="proj-tags">
           <span class="ptag">Python</span>
           <span class="ptag">Pandas & NumPy</span>
@@ -531,6 +580,33 @@ footer span{color:var(--accent2)}
           <span class="ptag">Streamlit</span>
         </div>
       </div>
+      <div class="proj-card">
+        <div class="cert-img-wrap">
+          <img src="nptel-cert.jpg" alt="excel dashboard"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        </div>
+  <div class="proj-head">
+    <div class="proj-ico">📊</div>
+    <div class="proj-actions">
+      <a href="https://github.com/J05ubin/Public-Procurement-Data-Excel-Dashboard-Project" target="_blank" class="proj-btn" title="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+      <!-- <a href="#" target="_blank" class="proj-btn" style="width:auto;padding:0 10px;font-size:11px;letter-spacing:0.5px">Live</a> -->
+    </div>
+  </div>
+  <div class="proj-title">Public Procurement Excel Dashboard</div>
+  <!-- <div class="proj-desc">🔴 <strong style="color:var(--accent3)">Problem:</strong> Government procurement data is complex and hard to interpret without proper visual tools.<br><br>✅ <strong style="color:var(--cyan)">Impact:</strong> Interactive Excel dashboard analyzing 4,690 Assam tenders — helping officials identify spending patterns and improve decision-making.</div>
+  <br><strong style="color:var(--accent3)">🛠️ Tech Used: </strong> -->
+  <div class="proj-desc">Government procurement data is complex and hard to interpret without visual tools. Built an interactive Excel dashboard analyzing 4,690 Assam tenders — helping officials and researchers identify spending patterns and improve procurement decision-making.</div>
+  <div class="proj-tags">
+    <span class="ptag">Excel</span>
+    <span class="ptag">Pivot Tables</span>
+    <span class="ptag">Data Analysis</span>
+    <span class="ptag">Data Cleaning</span>
+  </div>
+</div>
       <!-- <div class="proj-card">
         <div class="proj-head">
           <div class="proj-ico">💬</div>
@@ -551,20 +627,83 @@ footer span{color:var(--accent2)}
   </div>
 </section>
 
+<!-- TRAININGS -->
+<section id="trainings">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="sec-eyebrow">04. training</div>
+      <h2 class="sec-title">Trainings</span></h2>
+      <div class="sec-bar"></div>
+    </div>
+    <div class="cert-grid reveal">
+      <div class="cert-card">
+  <div class="cert-img-wrap">
+    <img src="certificates/Summer Training.jpg" alt="Summer Training Certificate"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="cert-img-placeholder" style="display:none">
+      <span>🏅</span><p>Add summer-training.jpg</p>
+    </div>
+  </div>
+  <div class="cert-body">
+    <div class="cert-head">
+      <div class="cert-issuer">LPU · Centre for Professional Enhancement</div>
+      <div class="cert-date">16 June – 23 July 2025</div>
+    </div>
+    <div class="cert-title">Machine Learning Made Easy: From Basics to AI Applications</div>
+    <div class="cert-org">School of Computer Science & Engineering · LPU</div>
+        <div class="cert-tags">
+      <span class="ptag">Machine Learning</span>
+      <span class="ptag">AI</span>
+    </div>
+    <div style="display:flex;justify-content:flex-end">
+      <a href="summer-training.jpg" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-top:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+    </div>
+    
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-wrap">
     <div class="reveal">
-      <div class="sec-eyebrow">04. certifications</div>
-      <h2 class="sec-title">Certificates &amp; <span>Achievements</span></h2>
+      <div class="sec-eyebrow">05. certifications</div>
+      <h2 class="sec-title">Certificates</span></h2>
       <div class="sec-bar"></div>
     </div>
     <div class="cert-grid reveal">
 
+<div class="cert-card">
+  <div class="cert-img-wrap">
+    <img src="certificates/SQL_BASIC.jpg" alt="HackerRank SQL Basic Certificate"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="cert-img-placeholder" style="display:none">
+      <span>🏅</span><p>Add hackerrank-sql.jpg</p>
+    </div>
+  </div>
+  <div class="cert-body">
+    <div class="cert-head">
+      <div class="cert-issuer">HackerRank</div>
+      <div class="cert-date">18 Mar, 2026</div>
+    </div>
+    <div class="cert-title">SQL (Basic)</div>
+    <div class="cert-org">Certificate of Accomplishment · Skill Certification Test</div>
+    <div style="display:flex;justify-content:flex-end">
+      <a href="https://www.hackerrank.com/certificates/3D9C90A7E3DF" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-bottom:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+    </div>
+    <!-- <div class="cert-tags">
+      <span class="ptag">SQL</span>
+      <span class="ptag">HackerRank</span>
+      <span class="ptag">Database</span>
+    </div> -->
+  </div>
+</div>
       <div class="cert-card">
         <div class="cert-img-wrap">
           <!-- Replace nptel-cert.jpg with your actual NPTEL certificate image -->
-          <img src="nptel-cert.jpg" alt="NPTEL Cloud Computing Certificate"
+          <img src="certificates/Cloud Computing.jpg" alt="NPTEL Cloud Computing Certificate"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="cert-img-placeholder" style="display:none">
             <span>📄</span><p>Add nptel-cert.jpg</p>
@@ -577,14 +716,16 @@ footer span{color:var(--accent2)}
           </div>
           <div class="cert-title">Cloud Computing</div>
           <div class="cert-org">SWAYAM · Skill India · MoE, Govt. of India</div>
-          <div class="cert-tags"><span class="ptag">Cloud</span><span class="ptag">IIT Kharagpur</span><span class="ptag">12 Weeks</span></div>
+          <div style="display:flex;justify-content:flex-end">
+            <a href="https://drive.google.com/file/d/1EcGAld2y0dsG3JfwiIBSyF6g8AQzccgq/view?usp=drive_link" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-top:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+          </div>
         </div>
       </div>
 
       <div class="cert-card">
         <div class="cert-img-wrap">
           <!-- Replace ctf-cert.jpg with your actual CTF certificate image -->
-          <img src="ctf-cert.jpg" alt="CTF Participation Certificate"
+          <img src="certificates/CTF.jpg" alt="CTF Participation Certificate"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="cert-img-placeholder" style="display:none">
             <span>🏆</span><p>Add ctf-cert.jpg</p>
@@ -597,10 +738,66 @@ footer span{color:var(--accent2)}
           </div>
           <div class="cert-title">Capture the Flag (CTF)</div>
           <div class="cert-org">CyberSec Symposium · Lovely Professional University</div>
-          <div class="cert-desc">Certificate of Participation — 12-hour Capture the Flag Challenge organized by the Student Chapter Cisco x LPU iGen Community.</div>
-          <div class="cert-tags"><span class="ptag">CyberSecurity</span><span class="ptag">CTF</span><span class="ptag">LPU</span></div>
+          <div style="display:flex;justify-content:flex-end">
+            <a href="certificates/CTF.jpg" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-top:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+          </div>
         </div>
       </div>
+
+      <div class="cert-card">
+  <div class="cert-img-wrap">
+    <img src="certificates/Python_for_Data_Analysis_page-0001.jpg" alt="Coursera Python Pandas NumPy Certificate"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="cert-img-placeholder" style="display:none">
+      <span>🐍</span><p>Add coursera-pandas.jpg</p>
+    </div>
+  </div>
+  <div class="cert-body">
+    <div class="cert-head">
+      <div class="cert-issuer">Coursera</div>
+      <div class="cert-date">Mar 18, 2026</div>
+    </div>
+    <div class="cert-title">Python for Data Analysis: Pandas & NumPy</div>
+    <div class="cert-org">Project Certificate · Authorized by Coursera</div>
+    <div style="display:flex;justify-content:flex-end">
+      <a href="https://coursera.org/verify/ACONIDZ1PGD7" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-top:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+    </div>
+    <!-- <div class="cert-tags">
+      <span class="ptag">Python</span>
+      <span class="ptag">Pandas</span>
+      <span class="ptag">NumPy</span>
+      <span class="ptag">Data Analysis</span>
+      <span class="ptag">Coursera</span>
+    </div> -->
+  </div>
+</div>
+
+      <div class="cert-card">
+  <div class="cert-img-wrap">
+    <img src="certificates/Introduction_to_POWER_BI_page-0001.jpg" alt="Coursera Power BI Certificate"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="cert-img-placeholder" style="display:none">
+      <span>📊</span><p>Add coursera-powerbi.jpg</p>
+    </div>
+  </div>
+  <div class="cert-body">
+    <div class="cert-head">
+      <div class="cert-issuer">Coursera</div>
+      <div class="cert-date">Mar 17, 2026</div>
+    </div>
+    <div class="cert-title">Power BI for Beginners: Interactive Dashboard Fundamentals</div>
+    <div class="cert-org">Project Certificate · Authorized by Coursera</div>
+    <div style="display:flex;justify-content:flex-end">
+      <a href="https://coursera.org/verify/RVD1G764I58E" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-family:var(--font-mono);font-size:11px;padding:5px 12px;border:1px solid var(--border2);border-radius:5px;color:var(--accent2);text-decoration:none;margin-top:0.7rem;transition:all 0.2s" onmouseover="this.style.background='rgba(124,111,247,0.1)'" onmouseout="this.style.background='transparent'">📄 View Certificate ↗</a>
+    </div>
+    <!-- <div class="cert-tags">
+      <span class="ptag">Power BI</span>
+      <span class="ptag">Dashboard</span>
+      <span class="ptag">Coursera</span>
+      <span class="ptag">Data Analytics</span>
+    </div> -->
+  </div>
+</div>
 
     </div>
   </div>
@@ -610,7 +807,7 @@ footer span{color:var(--accent2)}
 <section id="education">
   <div class="section-wrap">
     <div class="reveal">
-      <div class="sec-eyebrow">04. education</div>
+      <div class="sec-eyebrow">06. education</div>
       <h2 class="sec-title">Academic <span>Background</span></h2>
       <div class="sec-bar"></div>
     </div>
@@ -658,7 +855,7 @@ footer span{color:var(--accent2)}
 <section id="contact">
   <div class="section-wrap">
     <div class="reveal">
-      <div class="sec-eyebrow">06. contact</div>
+      <div class="sec-eyebrow">07. contact</div>
       <h2 class="sec-title">Let's <span>Connect</span></h2>
       <div class="sec-bar"></div>
     </div>
@@ -678,10 +875,10 @@ footer span{color:var(--accent2)}
             <div class="clink-ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></div>
             <div><div class="clink-label">GitHub</div><div class="clink-val">github.com/J05ubin</div></div>
           </a>
-          <a href="https://twitter.com/yourhandle" target="_blank" class="clink">
+          <!-- <a href="https://twitter.com/yourhandle" target="_blank" class="clink">
             <div class="clink-ico"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
             <div><div class="clink-label">Twitter / X</div><div class="clink-val">@yourhandle</div></div>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="contact-form reveal">
